@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/*style general*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+h1{
+    color: white;
+}
+
+.Caja_petri h1{
+    color: black;
+}
+
+
+/*header superior*/
+
+
+nav {
+    transition: all ease-in-out 1s;
+    padding: 0px 0px;
+    width: 100%;
+    height: 65px;
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: #f0f0f0;
+}
+
+/*barra menu*/
+
+.container__menu{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    background-color: #033158;
+    position:absolute;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.container__menu2{
+    height: 100%;
+}
+
+.container__menu2>ul{
+    height: 100%;
+    display: flex;
+}
+
+.container__menu2 ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.container__menu2>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+.container__menu2>ul>li>a:hover{
+    transform: scale(1.1);
+    background: #00597d;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#selected{
+    transform: scale(1.1 );
+    background-color: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+
+main{
+    background: #ffffff;
+    margin-top: 5px;
+    display: flex;  
+}
+
+/*lado izquierdo*/
+
+
+.Materiales_Soluciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    min-height: calc(100vh - 70px);
+    background-color: #008a91;
+}
+.Soluciones {
+    z-index: 2;
+    text-align: center;
+}
+
+.Sustancias {
+    text-align: center;
+}
+
+.Botones_Sustancias {
+    position: relative;
+    top: -30px; 
+    display: flex;
+    justify-content: center;
+}
+
+.Sustancia_First{
+    z-index: 2;
+    text-align: center;
+}
+
+.Sustancias_Second{
+    text-align: center;
+}
+
+button {
+    margin: 5px; 
+    background-color: #008a91;
+    border: none;
+
+}
+
+
+
+.Soluciones img{
+    width: auto; 
+    max-height: 150px;
+}
+
+
+.Sustancias img{
+    max-width: 140px; 
+    height: auto;
+}
+
+
+/*Derecho*/
+
+.Caja_petri{
+    position: relative;
+    background-color: #e7e8de;
+    width: 55%;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 70px);
+}
+
+.Caja_petri img{
+    width: auto;
+    max-height: 300px;   
+    z-index: 1
+}
+
